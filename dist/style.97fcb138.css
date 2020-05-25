@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  background: #000;
+  color: #fff;
+}
+
+.overlay {
+  width: 100%;
+  background: #2196f3;
+  z-index: 99;
+  position: absolute;
+}
+
+.one {
+  height: 30vh;
+}
+
+.two {
+  height: 40vh;
+  top: 20%;
+}
+
+.three {
+  height: 40vh;
+  top: 60%;
+}
+
+.header {
+  background: url("/space1.668f875f.jpg") center no-repeat;
+  background-size: cover;
+  height: 0;
+}
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header .header-content .containers {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header-content .containers .left-container {
+  margin-right: 40%;
+  text-align: left;
+}
+.header .header-content .containers .right-container {
+  text-align: right;
+}
+.header .header-content .containers h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.header .social-media {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.header .social-media i {
+  font-size: 2rem;
+  margin: 40px 0;
+  cursor: pointer;
+}
+.header .social-media i:hover {
+  color: #2196f3;
+  transition: 0.5s;
+}
+
+@media (max-width: 875px) {
+  .header .header-content .containers {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  position: fixed;
+  cursor: pointer;
+  font-style: italic;
+  padding: 10px;
+  z-index: 2;
+}
+.logo span {
+  color: #2196f3;
+}
+
+.navbar-toggler {
+  position: fixed;
+  right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  z-index: 2;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: #2196f3;
+  transition: 0.5s;
+}
+
+@media (max-width: 860px) {
+  nav {
+    background: #000;
+  }
+  nav ul {
+    flex-direction: column;
+    max-height: 0em;
+  }
+  nav ul li {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
